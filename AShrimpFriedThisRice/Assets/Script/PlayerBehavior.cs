@@ -11,6 +11,7 @@ public class PlayerBehavior : MonoBehaviour
     [SerializeField] private float movementSpeed;
     [SerializeField] private float maxInteractDistance;
     [SerializeField] private Transform carriedObjectAnchor;
+    [SerializeField] private ParticleSystem m_Part;
     private GameObject currentlyCarriedObjectRef;
 
     private Rigidbody m_RB;
@@ -28,6 +29,14 @@ public class PlayerBehavior : MonoBehaviour
     private void Update()
     {
         GatherInput();
+        if(moveDirection == Vector3.zero)
+        {
+            m_Part.Stop();
+        }
+        else
+        {
+            m_Part.Play();
+        }
         FaceTowardsMovement();
         Interact();
 
@@ -112,7 +121,7 @@ public class PlayerBehavior : MonoBehaviour
 
     public void SpawnNewPlayerCarriedObject(ItemSO _itemToChangeTo)
     {
-        carriedObject = Instantiate(_itemToChangeTo.ItemObject, carriedObjectAnchor);
+        carriedObject = Instantiate(Resources.Load("prefabs/ingredienttestobject") as GameObject, carriedObjectAnchor);
         carriedObject.GetComponent<FoodInstance>().ingredientsPresent.Add(_itemToChangeTo);
     }
 }

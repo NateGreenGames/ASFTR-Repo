@@ -7,7 +7,7 @@ using UnityEditor;
 public class ItemSO : ScriptableObject
 {
     public string itemName;
-    public GameObject ItemObject;
+    public Mesh itemMesh;
     public Sprite ItemIcon;
 
 

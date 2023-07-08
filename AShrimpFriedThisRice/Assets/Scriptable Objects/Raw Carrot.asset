@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Raw Carrot
   m_EditorClassIdentifier: 
   itemName: Raw Carrot
-  ItemObject: {fileID: 177184274014062436, guid: 93b6db56f4880ce4c97aef44002f84b7,
+  itemMesh: {fileID: 2461183445063387971, guid: 953811313a264ea4cb6d1c00e290695a,
     type: 3}
   ItemIcon: {fileID: 21300000, guid: c66b96fdecda96c4e9ce7bdd2ac26b04, type: 3}
   riceCookerOutput: {fileID: 11400000, guid: 87700e435cc082046b390d7435a72c16, type: 2}

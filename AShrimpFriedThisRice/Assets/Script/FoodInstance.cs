@@ -9,11 +9,23 @@ public class FoodInstance : MonoBehaviour
 
     private MeshFilter m_MF;
 
+    private void Start()
+    {
+        m_MF = gameObject.GetComponent<MeshFilter>();
+        UpdateDisplayMesh();
+    }
 
 
 
     public void UpdateDisplayMesh()
     {
-        m_MF.mesh = GameManager.gm.SolveForRecipe(ingredientsPresent).dishMesh;
+        if(ingredientsPresent.Count > 1)
+        {
+            m_MF.mesh = GameManager.gm.SolveForRecipe(ingredientsPresent).dishMesh;
+        }
+        else
+        {
+            m_MF.mesh = ingredientsPresent[0].itemMesh;
+        }
     }
 }
