@@ -8,6 +8,6 @@ public class soDish : ScriptableObject
     public string dishName;
     public Sprite dishImg;
     public Mesh dishMesh;
-    public ItemSO[] soItem;
+    public List<ItemSO> soItem;
     
 }

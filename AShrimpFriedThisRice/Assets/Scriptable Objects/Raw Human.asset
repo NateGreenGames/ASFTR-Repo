@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: Raw Human
   m_EditorClassIdentifier: 
   itemName: Raw Human
-  ItemObject: {fileID: 0}
-  ItemIcon: {fileID: 0}
-  riceCookerOutput: {fileID: 0}
-  cuttingOuput: {fileID: 11400000, guid: c002d04abef798843b26bcef90053c7a, type: 2}
-  friedOutput: {fileID: 0}
+  ItemObject: {fileID: 177184274014062436, guid: 93b6db56f4880ce4c97aef44002f84b7,
+    type: 3}
+  ItemIcon: {fileID: 21300000, guid: 13ced2f3406f66942995dbf6841a25bf, type: 3}
+  riceCookerOutput: {fileID: 11400000, guid: 87700e435cc082046b390d7435a72c16, type: 2}
+  cuttingOutput: {fileID: 11400000, guid: c002d04abef798843b26bcef90053c7a, type: 2}
+  friedOutput: {fileID: 11400000, guid: 87700e435cc082046b390d7435a72c16, type: 2}

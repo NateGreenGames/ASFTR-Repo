@@ -6,7 +6,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager gm;
     public PlayerBehavior playerRef;
-
+    public soDish[] recipeList;
 
 
     private void Awake()
@@ -28,6 +28,27 @@ public class GameManager : MonoBehaviour
         }
 
         if (!playerRef) playerRef = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerBehavior>();
+
+    }
+
+
+    public soDish SolveForRecipe(List<ItemSO> _presentIngredients)
+    {
+        for (int i = 0; i < recipeList.Length; i++)
+        {
+            for (int j = 0; j < recipeList[i].soItem.Count; j++)
+            {
+                if (!_presentIngredients.Contains(recipeList[i].soItem[j]))
+                {
+                    i++;
+                    j = 0;
+                }else if(j == recipeList[i].soItem.Count)
+                {
+                    return recipeList[i];
+                }
+            }
+        }
+        return null; //Return burnt food dish.
 
     }
 }

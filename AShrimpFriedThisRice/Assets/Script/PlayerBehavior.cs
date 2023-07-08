@@ -5,11 +5,13 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody))]
 public class PlayerBehavior : MonoBehaviour
 {
-    public ItemSO carriedObject;
-    public GameObject lookingAtTarget;
+    public GameObject carriedObject;
+    public GameObject whatImLookingAt;
 
     [SerializeField] private float movementSpeed;
     [SerializeField] private float maxInteractDistance;
+    [SerializeField] private Transform carriedObjectAnchor;
+    private GameObject currentlyCarriedObjectRef;
 
     private Rigidbody m_RB;
 
@@ -27,7 +29,6 @@ public class PlayerBehavior : MonoBehaviour
     {
         GatherInput();
         FaceTowardsMovement();
-
         Interact();
 
     }
@@ -52,20 +53,66 @@ public class PlayerBehavior : MonoBehaviour
     }
     private void Interact()
     {
+
+        Collider[] testColliderArray = Physics.OverlapSphere(carriedObjectAnchor.position, maxInteractDistance);
+
+        float closestDistance = Mathf.Infinity;
+        int indexOfClosestPoint = 100;
+        for (int i = 0; i < testColliderArray.Length; i++)
+        {
+            //find closest colider that isn't the player.
+            float distanceToThisPoint = (transform.position - testColliderArray[i].transform.position).magnitude;
+            if (distanceToThisPoint < closestDistance && testColliderArray[i].name != "Player")
+            {
+                closestDistance = distanceToThisPoint;
+                indexOfClosestPoint = i;
+            }
+        }
+        if (indexOfClosestPoint != 100 && testColliderArray[indexOfClosestPoint].gameObject.TryGetComponent<IInteractable>(out IInteractable interactionReference) && interactionReference.isInteractable == true)
+        {
+            whatImLookingAt = testColliderArray[indexOfClosestPoint].gameObject;
+            interactionReference.OnHover();
+            if (interactedThisFrame) interactionReference.OnInteract();
+        }
+        else
+        {
+            whatImLookingAt = null;
+        }
+
+
+
+        /*
         Ray ray = new Ray(transform.position, transform.forward);
         RaycastHit hitInfo;
         if(Physics.Raycast(ray, out hitInfo, maxInteractDistance))
         {
-            lookingAtTarget = hitInfo.collider.gameObject;
-            if (lookingAtTarget.TryGetComponent<IInteractable>(out IInteractable interactionReference))
+            whatImLookingAt = hitInfo.collider.gameObject;
+            if (whatImLookingAt.TryGetComponent<IInteractable>(out IInteractable interactionReference) && interactionReference.isInteractable == true)
             {
                 interactionReference.OnHover();
                 if (interactedThisFrame) interactionReference.OnInteract();
+                //UpdatePlayerCarriedObject();
             }
         }
         else
         {
-            lookingAtTarget = null;
+            whatImLookingAt = null;
+        }*/
+    }
+
+    public void UpdatePlayerCarriedObject(GameObject _itemToChangeTo)
+    {
+        carriedObject = _itemToChangeTo;
+        if(carriedObject != null)
+        {
+            carriedObject.transform.parent = carriedObjectAnchor;
+            carriedObject.transform.position = carriedObjectAnchor.position;
         }
+    }
+
+    public void SpawnNewPlayerCarriedObject(ItemSO _itemToChangeTo)
+    {
+        carriedObject = Instantiate(_itemToChangeTo.ItemObject, carriedObjectAnchor);
+        carriedObject.GetComponent<FoodInstance>().ingredientsPresent.Add(_itemToChangeTo);
     }
 }

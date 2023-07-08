@@ -11,5 +11,5 @@ public class ItemSO : ScriptableObject
     public Sprite ItemIcon;
 
 
-    public ItemSO riceCookerOutput, cuttingOuput, friedOutput;
+    public ItemSO riceCookerOutput, cuttingOutput, friedOutput;
 }
