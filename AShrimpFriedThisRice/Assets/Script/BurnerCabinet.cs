@@ -8,6 +8,7 @@ public class BurnerCabinet : MonoBehaviour, IInteractable
     [Range(0, 100)] public float cookingProgress;
     [SerializeField] Material previewMaterial;
     [SerializeField] Transform itemPositionAnchor;
+    [SerializeField] GameObject fireEffect;
 
     [SerializeField] private float cookTime;
 
@@ -38,6 +39,7 @@ public class BurnerCabinet : MonoBehaviour, IInteractable
         else if(isCooking && heldItem == null)
         {
             StopAllCoroutines();
+            fireEffect.SetActive(false);
             isCooking = false;
             cookingProgress = 0;
         }
@@ -49,6 +51,7 @@ public class BurnerCabinet : MonoBehaviour, IInteractable
     private IEnumerator CookingRoutine()
     {
         FoodInstance foodRef = heldItem.GetComponent<FoodInstance>();
+        fireEffect.SetActive(true);
         isCooking = true;
         float elapsedTime = 0;
         while (elapsedTime < cookTime)
@@ -58,6 +61,7 @@ public class BurnerCabinet : MonoBehaviour, IInteractable
             elapsedTime += Time.deltaTime;
         }
         foodRef.ingredientsPresent[0] = foodRef.ingredientsPresent[0].riceCookerOutput;
+        fireEffect.SetActive(false);
         isCooking = false;
     }
     public void OnInteract()
