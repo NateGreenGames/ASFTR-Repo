@@ -45,4 +45,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerRef: {fileID: 0}
-  recipeList: []
+  recipeList:
+  - {fileID: 11400000, guid: 44196089396369b4d859687d8532f0fc, type: 2}
+  - {fileID: 11400000, guid: ec5cf2c0e701d3d469696fa1770aa8ed, type: 2}
+  - {fileID: 11400000, guid: 0f036547c9a9d834d829a8fde1094737, type: 2}
+  - {fileID: 11400000, guid: 82da1170579c66145a95777e39d580aa, type: 2}
+  - {fileID: 11400000, guid: 94ac1745783102641b07882e882d792e, type: 2}
+  - {fileID: 11400000, guid: 89f39c6d9a376974db1c8fff2fe2c5d3, type: 2}
+  - {fileID: 11400000, guid: 9aa1a5ad752c9db4daa62de9231c4b20, type: 2}
+  - {fileID: 11400000, guid: 24dac85d5837d6e4e93308cacd0255d9, type: 2}
+  - {fileID: 11400000, guid: bfd59736c76b88648a16108f867704b2, type: 2}
+  - {fileID: 11400000, guid: c6b11505c06803743ae4a8bce87a3b0e, type: 2}
+  - {fileID: 11400000, guid: 36bf6a6a1c8930e4cbd5ee2573af53b3, type: 2}
+  - {fileID: 11400000, guid: 036101f9969f96441b21d4bf1f5bfc80, type: 2}
+  - {fileID: 11400000, guid: 8a1be276de896b448af410ed3846db68, type: 2}
+  - {fileID: 11400000, guid: a953aa862a8ace045b3400a3276eb61b, type: 2}
+  - {fileID: 11400000, guid: f17522dceaed21047b006e335c6d94d5, type: 2}
+  - {fileID: 11400000, guid: 53be28bd1b753ce4d93020b7ee98e583, type: 2}
+  - {fileID: 11400000, guid: daf15731c4dc63f4493830858d6b4827, type: 2}
+  - {fileID: 11400000, guid: 6b3555092bb1ccd4c8bae13244eeffcb, type: 2}
+  - {fileID: 11400000, guid: 56a7ce4dd3796a9499872c0840af5c2d, type: 2}
+  - {fileID: 11400000, guid: 2d18f87e1fb1e0b45a62e4db1f337913, type: 2}
+  - {fileID: 11400000, guid: 0b51b26dfd9830e4c96d5548ef08fca0, type: 2}
+  - {fileID: 11400000, guid: ea9107f07c5bff246aac8432d90039a7, type: 2}
+  - {fileID: 11400000, guid: 8c4fda7e0f321334c9b83d4350c4fbb6, type: 2}
+  - {fileID: 11400000, guid: d75450697784a924a8161c409c86304a, type: 2}
+  - {fileID: 11400000, guid: 236a5f9951de6fe48a6e980b2faf8c5e, type: 2}
+  - {fileID: 11400000, guid: 18277e0b20bb94945a361dbb95da00f8, type: 2}
+  - {fileID: 11400000, guid: 402733f197882bc4aac1cc1042192e6e, type: 2}
+  - {fileID: 11400000, guid: 19e195b9797f04e4289086c87cefdf32, type: 2}
+  canvasManager: {fileID: 0}
+  curScene: 0
