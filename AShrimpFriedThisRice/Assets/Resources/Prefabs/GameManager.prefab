@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8017339910124091027}
   - component: {fileID: 8017339910124091026}
+  - component: {fileID: 1377801592}
+  - component: {fileID: 1377801595}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -76,3 +78,28 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 19e195b9797f04e4289086c87cefdf32, type: 2}
   canvasManager: {fileID: 0}
   curScene: 0
+  isPaused: 0
+--- !u!114 &1377801592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8017339910124091029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88e773a1481787e429edcb862383a7ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1377801595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8017339910124091029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0600f9794fb642d4183a05c977420b41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

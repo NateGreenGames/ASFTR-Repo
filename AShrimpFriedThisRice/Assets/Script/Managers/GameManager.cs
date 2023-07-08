@@ -12,6 +12,8 @@ public class GameManager : MonoBehaviour
     public CanvasManager canvasManager;
     public eScene curScene;
 
+    public bool isPaused;
+
     private void Awake()
     {
         canvasManager = GetComponent<CanvasManager>();
@@ -34,14 +36,10 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-        if (curScene != eScene.mainMenu)
-        {
-            if (Input.GetKeyDown(KeyCode.Escape))
-            {
-                canvasManager.ShowPauseMenu();
-            }
-        }
+        PauseToggle();
     }
+
+    #region SceneLoading
     private void OnEnable()
     {
         SceneManager.sceneLoaded += OnSceneLoaded;
@@ -67,6 +65,23 @@ public class GameManager : MonoBehaviour
             case eScene.nateTestScene:
                 playerRef = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerBehavior>();
                 break;
+        }
+    }
+    #endregion
+    private void PauseToggle()
+    {
+        if (curScene != eScene.mainMenu)
+        {
+            if (!isPaused && Input.GetKeyDown(KeyCode.Escape))
+            {
+                isPaused = true;
+                canvasManager.ShowPauseMenu();
+            } else
+            if (isPaused && Input.GetKeyDown(KeyCode.Escape))
+            {
+                GameObject.Find("Widget_PauseMenu(Clone)").GetComponent<WidgetPauseMenu>().OnResumePressed();
+                isPaused = false;
+            }
         }
     }
 

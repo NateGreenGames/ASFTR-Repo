@@ -2,9 +2,16 @@ using UnityEngine;
 
 public class WidgetPauseMenu : MonoBehaviour
 {
+    private GameManager gm;
+    private void Start()
+    {
+        gm = GameManager.gm;
+    }
     // Buttons on the Pause Menu
     public void OnResumePressed()
     {
+        gm.isPaused = false;
+        gm.playerRef.GetComponent<PlayerBehavior>().enabled = true;
         Destroy(this.gameObject);
     }
 

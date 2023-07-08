@@ -29,6 +29,7 @@ public class CanvasManager : MonoBehaviour
 
     public void ShowPauseMenu()
     {
-        Instantiate(Resources.Load("Widgets/" + "WidgetPauseMenu") as GameObject).GetComponent<WidgetPauseMenu>();
+        Instantiate(Resources.Load("Widgets/" + "Widget_PauseMenu") as GameObject).GetComponent<WidgetPauseMenu>();
+        GameManager.gm.playerRef.GetComponent<PlayerBehavior>().enabled = false;
     }
 }
