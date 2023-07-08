@@ -1,6 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CanvasManager : MonoBehaviour
 {
@@ -17,6 +16,10 @@ public class CanvasManager : MonoBehaviour
     {
         Instantiate(Resources.Load("Canvas/CanvasFE/" + "CanvasFE") as GameObject).GetComponent<CanvasFE>();
     }
-
+    
+    public void LoadLevel(eScene _scene)
+    {
+        SceneManager.LoadScene((int)_scene);
+    }
     
 }

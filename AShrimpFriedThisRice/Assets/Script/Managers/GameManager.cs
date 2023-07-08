@@ -11,14 +11,11 @@ public class GameManager : MonoBehaviour
     public soDish[] recipeList;
     public CanvasManager canvasManager;
     public eScene curScene;
-    private CanvasFE canvasFE;
 
     private void Awake()
     {
         canvasManager = GetComponent<CanvasManager>();
-
         Init();
-
     }
 
 
