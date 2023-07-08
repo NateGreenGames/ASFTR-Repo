@@ -1,17 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
+public enum eScene { mainMenu, level001 }
 public class GameManager : MonoBehaviour
 {
     public static GameManager gm;
     public PlayerBehavior playerRef;
     public soDish[] recipeList;
-
+    public CanvasManager canvasManager;
+    public eScene curScene;
+    private CanvasFE canvasFE;
 
     private void Awake()
     {
+        canvasManager = GetComponent<CanvasManager>();
+
         Init();
+
     }
 
 
@@ -26,11 +33,34 @@ public class GameManager : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
+        if (curScene == eScene.mainMenu) return;
+        else if (!playerRef) playerRef = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerBehavior>();
 
-        if (!playerRef) playerRef = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerBehavior>();
 
     }
+    private void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
 
+    private void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    private void OnSceneLoaded(Scene _scene, LoadSceneMode _mode)
+    {
+        curScene = (eScene)_scene.buildIndex;
+        switch (curScene)
+        {
+            case eScene.mainMenu:
+                canvasManager.ShowCanvasFE();
+                break;
+            case eScene.level001:
+                // Function for loading level001
+                break;
+        }
+    }
 
     public soDish SolveForRecipe(List<ItemSO> _presentIngredients)
     {

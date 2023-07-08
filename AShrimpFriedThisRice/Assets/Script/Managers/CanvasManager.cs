@@ -4,15 +4,19 @@ using UnityEngine;
 
 public class CanvasManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private CanvasFE canvasFE;
+
+    // Functions used to change scenes
+
+    private void Start()
     {
         
+
+    }
+    public void ShowCanvasFE()
+    {
+        Instantiate(Resources.Load("Canvas/CanvasFE/" + "CanvasFE") as GameObject).GetComponent<CanvasFE>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 }
