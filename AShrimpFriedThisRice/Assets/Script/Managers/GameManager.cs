@@ -30,9 +30,17 @@ public class GameManager : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
-        
+    }
 
-
+    private void Update()
+    {
+        if (curScene != eScene.mainMenu)
+        {
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                canvasManager.ShowPauseMenu();
+            }
+        }
     }
     private void OnEnable()
     {

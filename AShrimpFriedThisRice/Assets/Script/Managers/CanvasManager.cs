@@ -26,4 +26,9 @@ public class CanvasManager : MonoBehaviour
     {
         Destroy(this.gameObject);
     }
+
+    public void ShowPauseMenu()
+    {
+        Instantiate(Resources.Load("Widgets/" + "WidgetPauseMenu") as GameObject).GetComponent<WidgetPauseMenu>();
+    }
 }
