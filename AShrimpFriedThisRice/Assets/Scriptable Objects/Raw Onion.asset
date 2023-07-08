@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 77f5c8f82bfacdd47a62a91cdb0e44f2, type: 3}
-  m_Name: Cooked Rice
+  m_Name: Raw Onion
   m_EditorClassIdentifier: 
-  itemName: Cooked Rice
+  itemName: Raw Onion
   ItemObject: {fileID: 0}
   ItemIcon: {fileID: 0}
   riceCookerOutput: {fileID: 0}
-  cuttingOuput: {fileID: 0}
-  friedOutput: {fileID: 11400000, guid: 442e5f4e6bb29d64892082432519492f, type: 2}
+  cuttingOuput: {fileID: 11400000, guid: ed318dfbe32d6aa47aa34e98d1d46af2, type: 2}
+  friedOutput: {fileID: 0}
