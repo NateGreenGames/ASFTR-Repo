@@ -1,10 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor;
 
-public class ItemSO : MonoBehaviour
+[CreateAssetMenu(menuName = "New Item")]
+public class ItemSO : ScriptableObject
 {
+    public string itemName;
     public GameObject ItemObject;
-    public string ItemName;
     public Sprite ItemIcon;
+
+
+    public ItemSO riceCookerOutput, cuttingOuput, friedOutput;
 }
