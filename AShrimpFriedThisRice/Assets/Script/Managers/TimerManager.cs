@@ -14,6 +14,7 @@ public class TimerManager : MonoBehaviour
     public void TimerInit(int _startingTime)
     {
         currentTimer = _startingTime;
+        timerBar.maxValue = currentTimer;
         Debug.Log(currentTimer);
         StartCoroutine(StartLevelTimer());
     }
