@@ -17,12 +17,13 @@ public class CanvasFE : MonoBehaviour
 
     public void OnSettingsPressed()
     {
-
+        gm.canvasManager.ShowSettings();
     }
 
     public void OnPlayPressed()
     {
-        gm.canvasManager.LoadLevel(eScene.level001);
+        // Temporily Natetest Scene instead of level one for testing purposes
+        gm.canvasManager.LoadLevel(eScene.nateTestScene);
     }
 
      

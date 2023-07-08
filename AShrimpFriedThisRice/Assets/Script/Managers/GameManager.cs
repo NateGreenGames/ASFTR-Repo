@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public enum eScene { mainMenu, level001 }
+public enum eScene { mainMenu, level001, nateTestScene }
 public class GameManager : MonoBehaviour
 {
     public static GameManager gm;
@@ -30,8 +30,7 @@ public class GameManager : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
-        if (curScene == eScene.mainMenu) return;
-        else if (!playerRef) playerRef = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerBehavior>();
+        
 
 
     }
@@ -54,7 +53,11 @@ public class GameManager : MonoBehaviour
                 canvasManager.ShowCanvasFE();
                 break;
             case eScene.level001:
+                playerRef = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerBehavior>();
                 // Function for loading level001
+                break;
+            case eScene.nateTestScene:
+                playerRef = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerBehavior>();
                 break;
         }
     }
