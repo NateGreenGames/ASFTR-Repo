@@ -19,7 +19,7 @@ public class BaseCabinet : MonoBehaviour, IInteractable
 
     private void Update()
     {
-        
+        if (GameManager.gm.playerRef.lookingAtTarget != this.gameObject) OnHoverEnd();
     }
     public void OnInteract()
     {
@@ -39,6 +39,7 @@ public class BaseCabinet : MonoBehaviour, IInteractable
 
     public void OnHoverEnd()
     {
+        m_MR.materials = initialMaterialList;
     }
 
 }

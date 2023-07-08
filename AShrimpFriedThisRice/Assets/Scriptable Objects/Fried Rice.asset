@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77f5c8f82bfacdd47a62a91cdb0e44f2, type: 3}
   m_Name: Fried Rice
   m_EditorClassIdentifier: 
+  itemName: Fried Rice
   ItemObject: {fileID: 0}
-  ItemName: 
   ItemIcon: {fileID: 0}
   riceCookerOutput: {fileID: 0}
   cuttingOuput: {fileID: 0}

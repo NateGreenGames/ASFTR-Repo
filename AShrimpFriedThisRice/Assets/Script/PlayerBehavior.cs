@@ -9,6 +9,7 @@ public class PlayerBehavior : MonoBehaviour
     public GameObject lookingAtTarget;
 
     [SerializeField] private float movementSpeed;
+    [SerializeField] private float maxInteractDistance;
 
     private Rigidbody m_RB;
 
@@ -26,6 +27,8 @@ public class PlayerBehavior : MonoBehaviour
     {
         GatherInput();
         FaceTowardsMovement();
+
+        Interact();
 
     }
 
@@ -49,15 +52,20 @@ public class PlayerBehavior : MonoBehaviour
     }
     private void Interact()
     {
-        Ray ray = new Ray(transform.position, Vector3.forward);
+        Ray ray = new Ray(transform.position, transform.forward);
         RaycastHit hitInfo;
-        if(Physics.Raycast(ray, out hitInfo))
+        if(Physics.Raycast(ray, out hitInfo, maxInteractDistance))
         {
-            if(hitInfo.collider.gameObject.TryGetComponent<IInteractable>(out IInteractable interactionReference))
+            lookingAtTarget = hitInfo.collider.gameObject;
+            if (lookingAtTarget.TryGetComponent<IInteractable>(out IInteractable interactionReference))
             {
                 interactionReference.OnHover();
                 if (interactedThisFrame) interactionReference.OnInteract();
             }
+        }
+        else
+        {
+            lookingAtTarget = null;
         }
     }
 }
