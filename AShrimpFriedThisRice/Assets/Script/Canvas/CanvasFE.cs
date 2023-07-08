@@ -17,7 +17,7 @@ public class CanvasFE : MonoBehaviour
 
     public void OnSettingsPressed()
     {
-
+        gm.canvasManager.ShowSettings();
     }
 
     public void OnPlayPressed()
