@@ -17,12 +17,13 @@ public class WidgetPauseMenu : MonoBehaviour
 
     public void OnSettingsPressed()
     {
-        GameManager.gm.canvasManager.ShowSettings();
+        gm.canvasManager.ShowSettings();
     }
 
     public void OnMainMenuPressed()
     {
-        GameManager.gm.canvasManager.LoadLevel(eScene.mainMenu);
+        gm.isPaused = false;
+        gm.canvasManager.LoadLevel(eScene.mainMenu);
         Destroy(this.gameObject);
     }
 }
