@@ -15,4 +15,7 @@ MonoBehaviour:
   dishName: Human Fried Rice
   dishImg: {fileID: 0}
   dishMesh: {fileID: 0}
-  soItem: []
+  soItem:
+  - {fileID: 11400000, guid: 549627114b08bab4f8c41486f6e22908, type: 2}
+  - {fileID: 11400000, guid: 442e5f4e6bb29d64892082432519492f, type: 2}
+  - {fileID: 11400000, guid: 0de9f55a48cfef247b53e338e1b88d13, type: 2}

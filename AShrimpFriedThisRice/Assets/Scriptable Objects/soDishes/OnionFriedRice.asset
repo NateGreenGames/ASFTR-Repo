@@ -12,7 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b1873d61d0af094d9de8258f6f58151, type: 3}
   m_Name: OnionFriedRice
   m_EditorClassIdentifier: 
-  dishName: Onion Fried Rice
+  dishName: Fried Rice w/Onion
   dishImg: {fileID: 0}
   dishMesh: {fileID: 0}
-  soItem: []
+  soItem:
+  - {fileID: 11400000, guid: 549627114b08bab4f8c41486f6e22908, type: 2}
+  - {fileID: 11400000, guid: 442e5f4e6bb29d64892082432519492f, type: 2}
+  - {fileID: 11400000, guid: ed318dfbe32d6aa47aa34e98d1d46af2, type: 2}
