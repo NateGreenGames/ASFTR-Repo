@@ -103,6 +103,7 @@ public class GameManager : MonoBehaviour
                 }
             }
         }
+        Debug.Log("FailedToUpdateMesh");
         return null; //Return burnt food dish.
 
     }

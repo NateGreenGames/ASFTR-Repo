@@ -54,6 +54,7 @@ public class BaseCabinet : MonoBehaviour, IInteractable
             for (int i = 0; i < playerHeldItemFoodInstance.ingredientsPresent.Count; i++)
             {
                 heldItem.GetComponent<FoodInstance>().ingredientsPresent.Add(playerHeldItemFoodInstance.ingredientsPresent[i]);
+                heldItem.GetComponent<FoodInstance>().UpdateDisplayMesh();
             }
             Destroy(gm.playerRef.carriedObject);
         }
