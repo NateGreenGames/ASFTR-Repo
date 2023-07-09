@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Human Bits
   itemMesh: {fileID: 0}
-  ItemIcon: {fileID: 0}
+  ItemIcon: {fileID: -2122213334, guid: edc218fdb2849ca4bb4da4a7617405e5, type: 3}
   riceCookerOutput: {fileID: 11400000, guid: 87700e435cc082046b390d7435a72c16, type: 2}
   cuttingOutput: {fileID: 11400000, guid: f65c804f247ab2b4dadaa772ab694ae5, type: 2}
   friedOutput: {fileID: 11400000, guid: 0de9f55a48cfef247b53e338e1b88d13, type: 2}

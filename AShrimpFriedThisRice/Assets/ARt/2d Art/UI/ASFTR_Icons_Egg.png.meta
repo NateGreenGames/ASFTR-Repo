@@ -1,0 +1,431 @@
+fileFormatVersion: 2
+guid: 63406aae0c5a03443a4aa9322d27085b
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 0
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ASFTR_Icons_Egg_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1228.8
+        width: 307.2
+        height: 307.2
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdff4f4e9380c1b4db6c06b933a15fb2
+      internalID: -1463212017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ASFTR_Icons_Egg_1
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 1228.8
+        width: 307.2
+        height: 307.2
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b35d64a95f0ee314b989fe36c2605f35
+      internalID: -1864103575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ASFTR_Icons_Egg_2
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 1228.8
+        width: 307.2
+        height: 307.2
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8958132bddbc4e43991db5854eb4849
+      internalID: -1249839059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ASFTR_Icons_Egg_3
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 1228.8
+        width: 307.2
+        height: 307.2
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b70e5fc0024f8fd459619c6f067413f1
+      internalID: -861849554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ASFTR_Icons_Egg_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 921.8
+        width: 307.2
+        height: 307.2
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3775e8d51b527ff4bbbc224fc3e77d65
+      internalID: -1136274003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ASFTR_Icons_Egg_5
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 921.8
+        width: 307.2
+        height: 307.2
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e89b6c3aa8bc3bd48837aeb745b4be4c
+      internalID: -184766624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ASFTR_Icons_Egg_6
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 921.8
+        width: 307.2
+        height: 307.2
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b481ed4b0afe074895f5330eacb07a4
+      internalID: -1784540741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ASFTR_Icons_Egg_7
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 921.8
+        width: 307.2
+        height: 307.2
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8dd1b7ef2d9ed94e9140aeb989a78c3
+      internalID: -1450927757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ASFTR_Icons_Egg_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 614.8
+        width: 307.2
+        height: 307.2
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2024e53e4e7a9814dbc215b98f67db71
+      internalID: 1490177767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ASFTR_Icons_Egg_9
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 614.8
+        width: 307.2
+        height: 307.2
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1234ccc16df1e474b8b47e0ca6247285
+      internalID: 188088910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ASFTR_Icons_Egg_10
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 614.8
+        width: 307.2
+        height: 307.2
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e69edbec07e150f4a80c3eb778bcd1fe
+      internalID: -1183916205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ASFTR_Icons_Egg_11
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 614.8
+        width: 307.2
+        height: 307.2
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75390aab7ff681f47ae4778b0505f7f3
+      internalID: -1736570465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ASFTR_Icons_Egg_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 307.8
+        width: 307.2
+        height: 307.2
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e880651ae4bf4c4c99c6cf5dae5d833
+      internalID: -779318753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ASFTR_Icons_FriedEgg
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 307.8
+        width: 307.2
+        height: 307.2
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09d26fd7e1654574a9d2a2e09ea23c2d
+      internalID: 1495389333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: ec9fe4dcd3e12b4469b0d79d00fc9541
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      ASFTR_Icons_Egg_6: -1784540741
+      ASFTR_Icons_Egg_0: -1463212017
+      ASFTR_Icons_Egg_11: -1736570465
+      ASFTR_Icons_Egg_12: -779318753
+      ASFTR_Icons_FriedEgg: 1495389333
+      ASFTR_Icons_Egg_9: 188088910
+      ASFTR_Icons_Egg_1: -1864103575
+      ASFTR_Icons_Egg_7: -1450927757
+      ASFTR_Icons_Egg_8: 1490177767
+      ASFTR_Icons_Egg_4: -1136274003
+      ASFTR_Icons_Egg_10: -1183916205
+      ASFTR_Icons_Egg_5: -184766624
+      ASFTR_Icons_Egg_2: -1249839059
+      ASFTR_Icons_Egg_3: -861849554
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

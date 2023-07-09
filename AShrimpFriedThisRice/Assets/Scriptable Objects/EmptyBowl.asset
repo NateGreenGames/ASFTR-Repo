@@ -15,7 +15,8 @@ MonoBehaviour:
   itemName: Empty Bowl
   itemMesh: {fileID: -3114455288856287947, guid: adc73e2a61751144ca817b0b5593d2f5,
     type: 3}
-  ItemIcon: {fileID: -1355636800, guid: bf0cf00ae38d6094bb0b50ecbb1364f9, type: 3}
+  ItemIcon: {fileID: 316465157, guid: edc218fdb2849ca4bb4da4a7617405e5, type: 3}
   riceCookerOutput: {fileID: 0}
   cuttingOutput: {fileID: 0}
   friedOutput: {fileID: 0}
+  isChopped: 0
