@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dishName: Human & Egg Fried Rice w/Onion
   dishImg: {fileID: -465209246, guid: a1bfc2d3049a8274c8e11b8b662ae3e1, type: 3}
-  dishMesh: {fileID: 5751684849825963732, guid: 357614ba7a465c746841e626d0352d7c,
+  dishMesh: {fileID: 5751684849825963732, guid: b1d705b0ea0fab840a63a18dec3913d0,
     type: 3}
   soItem:
   - {fileID: 11400000, guid: 549627114b08bab4f8c41486f6e22908, type: 2}

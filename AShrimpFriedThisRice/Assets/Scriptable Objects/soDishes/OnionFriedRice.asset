@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dishName: Fried Rice w/Onion
   dishImg: {fileID: -852109611, guid: a1bfc2d3049a8274c8e11b8b662ae3e1, type: 3}
-  dishMesh: {fileID: -5054051785602950259, guid: 8ee61ef1aa9152d4cbd59f72bdedeb82,
+  dishMesh: {fileID: -5054051785602950259, guid: c01215a4c4ea21e41b69d2ebdcf7d8fa,
     type: 3}
   soItem:
   - {fileID: 11400000, guid: 549627114b08bab4f8c41486f6e22908, type: 2}

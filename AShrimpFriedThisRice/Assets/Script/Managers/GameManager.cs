@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     public eScene curScene;
 
     public bool isPaused;
+    public bool displayDebugInformation = false;
 
     private void Awake()
     {
@@ -89,6 +90,8 @@ public class GameManager : MonoBehaviour
 
     public soDish SolveForRecipe(List<ItemSO> _presentIngredients)
     {
+        soDish bestMatch = null;
+        int highestNumberOfConfirmedIngredients = 0;
         for (int i = 0; i < recipeList.Length; i++)
         {
             int numberOfConfirmedIngredients = 0;
@@ -98,14 +101,25 @@ public class GameManager : MonoBehaviour
                 {
                     numberOfConfirmedIngredients++;
                 }
-                if(numberOfConfirmedIngredients == recipeList[i].soItem.Count)
+                if(numberOfConfirmedIngredients == recipeList[i].soItem.Count && highestNumberOfConfirmedIngredients < numberOfConfirmedIngredients)
                 {
-                    return recipeList[i];
+                    bestMatch = recipeList[i];
+                    highestNumberOfConfirmedIngredients = numberOfConfirmedIngredients;
                 }
             }
         }
-        Debug.Log("FailedToUpdateMesh");
-        return null; //Return burnt food dish.
+
+
+        if(bestMatch != null)
+        {
+            if(displayDebugInformation) Debug.Log($"Model updated to: {bestMatch.dishName}.");
+            return bestMatch;
+        }
+        else
+        {
+            if(displayDebugInformation) Debug.Log("No dish match found.");
+            return recipeList[0];
+        }
 
     }
 }

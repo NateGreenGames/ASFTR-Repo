@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dishName: Human & Carrot Fried Rice
   dishImg: {fileID: -1628316740, guid: a1bfc2d3049a8274c8e11b8b662ae3e1, type: 3}
-  dishMesh: {fileID: -8455858512821701282, guid: 510b508a58eeeb04d9807c1ffc81eefe,
+  dishMesh: {fileID: -8455858512821701282, guid: e76908212548c39449044b7c4547c197,
     type: 3}
   soItem:
   - {fileID: 11400000, guid: 549627114b08bab4f8c41486f6e22908, type: 2}

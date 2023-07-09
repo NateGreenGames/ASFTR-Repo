@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: EmptyBowl
   m_EditorClassIdentifier: 
   itemName: Empty Bowl
-  itemMesh: {fileID: -3114455288856287947, guid: adc73e2a61751144ca817b0b5593d2f5,
+  itemMesh: {fileID: -3114455288856287947, guid: 0a820f0d8d694544bbbcac1de72549f8,
     type: 3}
   ItemIcon: {fileID: 316465157, guid: edc218fdb2849ca4bb4da4a7617405e5, type: 3}
   riceCookerOutput: {fileID: 0}

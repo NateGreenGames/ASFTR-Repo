@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dishName: Carrot Fried Rice w/Onion
   dishImg: {fileID: 1062827764, guid: a1bfc2d3049a8274c8e11b8b662ae3e1, type: 3}
-  dishMesh: {fileID: 9216348325604552130, guid: eea24cd3a6ce9ad45b4e760aa99c437e,
+  dishMesh: {fileID: 9216348325604552130, guid: c7147bde7bceef14882adf7dff7dd98c,
     type: 3}
   soItem:
   - {fileID: 11400000, guid: 549627114b08bab4f8c41486f6e22908, type: 2}
