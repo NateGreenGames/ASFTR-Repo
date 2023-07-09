@@ -21,7 +21,7 @@ public class FoodInstance : MonoBehaviour
     {
         if(ingredientsPresent.Count > 1)
         {
-            if(GameManager.gm.SolveForRecipe(ingredientsPresent).dishMesh != null)
+            if(GameManager.gm.SolveForRecipe(ingredientsPresent)?.dishMesh != null)
             {
                 m_MF.mesh = GameManager.gm.SolveForRecipe(ingredientsPresent).dishMesh;
             }

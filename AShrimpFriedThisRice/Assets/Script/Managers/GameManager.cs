@@ -91,13 +91,14 @@ public class GameManager : MonoBehaviour
     {
         for (int i = 0; i < recipeList.Length; i++)
         {
+            int numberOfConfirmedIngredients = 0;
             for (int j = 0; j < recipeList[i].soItem.Count; j++)
             {
-                if (!_presentIngredients.Contains(recipeList[i].soItem[j]))
+                if (_presentIngredients.Contains(recipeList[i].soItem[j]))
                 {
-                    i++;
-                    j = 0;
-                }else if(j == recipeList[i].soItem.Count)
+                    numberOfConfirmedIngredients++;
+                }
+                if(numberOfConfirmedIngredients == recipeList[i].soItem.Count)
                 {
                     return recipeList[i];
                 }
