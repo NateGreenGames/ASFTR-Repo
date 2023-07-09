@@ -1,0 +1,409 @@
+fileFormatVersion: 2
+guid: edc218fdb2849ca4bb4da4a7617405e5
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 0
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ASFTR_Icons_Rice_Cooked
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1228.8
+        width: 307.2
+        height: 307.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9df670bf76912e84faf010b02b73ac99
+      internalID: -1218807069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ASFTR_Icons_Egg_Raw
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 1228.8
+        width: 307.2
+        height: 307.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37a0405f4dc0a454a80abbfc2ca0e9dd
+      internalID: 1625143691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ASFTR_Icons_Human_Uncut
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 1229
+        width: 307
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9320e4c9a4c5e0447b2197c8f708fd14
+      internalID: 2069306939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ASFTR_Icons_Human_Cut_Uncooked
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 1228.8
+        width: 307.2
+        height: 307.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7ddacf75e8cc0544ae60c772a16eaff
+      internalID: -2122213334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ASFTR_Icons_GreenOnion_Uncut
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 921.8
+        width: 307.2
+        height: 307.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a19e7d8e50f268a4cb28dbfd048ae907
+      internalID: -204687189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ASFTR_Icons_Carrot_Uncut
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 921.8
+        width: 307.2
+        height: 307.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07f29e52646af3d48b3d2a936fd8f2e8
+      internalID: -72911112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ASFTR_Icons_ShrimpChef
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 921.8
+        width: 307.2
+        height: 307.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e18458c3e2806948a54fdc4f1d5b4ef
+      internalID: -1394804516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ASFTR_Icons_Human_Cut_Cooked
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 921.8
+        width: 307.2
+        height: 307.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b5101853ecd08441915a2a0d21c0a77
+      internalID: -1586587650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ASFTR_Icons_Bowl_Empty
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 614.8
+        width: 307.2
+        height: 307.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b28d5f57eaddad542bf3a5136b8e32ff
+      internalID: 316465157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ASFTR_Icons_Bowl_Rice
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 614.8
+        width: 307.2
+        height: 307.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1915b06b5178f744b8952278f1097f0e
+      internalID: -1879512616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ASFTR_Icons_Carrots_Chopped
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 614.8
+        width: 307.2
+        height: 307.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb4fe67913faa1440905e999b4ec3c5b
+      internalID: -2062817719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ASFTR_Icons_GreenOnion_Chopped
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 614.8
+        width: 307.2
+        height: 307.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2560534a4bdb034eb8a0efcc561e559
+      internalID: 23938338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ASFTR_Icons_Bowl_Dirty
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 307.8
+        width: 307.2
+        height: 307.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5be2e6f4e781f264298940707d110b28
+      internalID: 686869002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 2f9d8ab7c7e66df49ab505df9ec02191
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      ASFTR_Icons_GreenOnion_Uncut: -204687189
+      ASFTR_Icons_Carrots_Chopped: -2062817719
+      ASFTR_Icons_Human_Cut_Uncooked: -2122213334
+      ASFTR_Icons_ShrimpChef: -1394804516
+      ASFTR_Icons_Carrot_Uncut: -72911112
+      ASFTR_Icons_Human_Cut_Cooked: -1586587650
+      ASFTR_Icons_Bowl_Dirty: 686869002
+      ASFTR_Icons_GreenOnion_Chopped: 23938338
+      ASFTR_Icons_Egg_Raw: 1625143691
+      ASFTR_Icons_Human_Uncut: 2069306939
+      ASFTR_Icons_Bowl_Empty: 316465157
+      ASFTR_Icons_Rice_Cooked: -1218807069
+      ASFTR_Icons_Bowl_Rice: -1879512616
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

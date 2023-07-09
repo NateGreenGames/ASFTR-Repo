@@ -15,7 +15,8 @@ MonoBehaviour:
   itemName: Raw Carrot
   itemMesh: {fileID: 7227384419489534453, guid: dd3afdf268f0f304ca52f496be0d0e71,
     type: 3}
-  ItemIcon: {fileID: -1603406930, guid: bf0cf00ae38d6094bb0b50ecbb1364f9, type: 3}
+  ItemIcon: {fileID: -72911112, guid: edc218fdb2849ca4bb4da4a7617405e5, type: 3}
   riceCookerOutput: {fileID: 11400000, guid: 87700e435cc082046b390d7435a72c16, type: 2}
   cuttingOutput: {fileID: 11400000, guid: 9d7e8b73f08deb4419345c83e62f9890, type: 2}
   friedOutput: {fileID: 11400000, guid: 87700e435cc082046b390d7435a72c16, type: 2}
+  isChopped: 0
