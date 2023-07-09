@@ -130,7 +130,7 @@ GameObject:
   - component: {fileID: 422895615}
   - component: {fileID: 1316468092}
   m_Layer: 0
-  m_Name: Rice Cooker Cabinet
+  m_Name: Stove Cabinet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

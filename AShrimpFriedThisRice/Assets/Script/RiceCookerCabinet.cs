@@ -2,26 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CuttingBoardCabinet : MonoBehaviour, IInteractable
+public class RiceCookerCabinet : MonoBehaviour, IInteractable
 {
     public GameObject heldItem;
-    [Range(0, 100)] public float progress;
+    [Range(0, 100)] public float cookingProgress;
+    [SerializeField] GameObject steamEffect;
     [SerializeField] Material previewMaterial;
     [SerializeField] Transform itemPositionAnchor;
 
-    private bool isEngaging = false;
-    private bool isHovering;
+    [SerializeField] private float cookTime;
 
-    public bool isInteractable { get; set; }
-
+    private bool isCooking;
     private Material[] initialMaterialList;
     private MeshRenderer m_MR;
     private GameManager gm;
     private GameObject spawnedGameObject;
 
-
-    private float timeToCut = 3;
-    private float timerHolder;
+    public bool isInteractable { get; set; }
 
     private void Start()
     {
@@ -33,52 +30,49 @@ public class CuttingBoardCabinet : MonoBehaviour, IInteractable
 
     private void Update()
     {
-        if (Input.GetKey(KeyCode.Space) && heldItem != null && isHovering && heldItem.GetComponent<FoodInstance>().ingredientsPresent[0].isChopped == false) // Checks to see if the item is chopped. If true, press space does nothing.
-        {
-            isEngaging = true;
-            if(timerHolder < timeToCut)
-            {
-                timerHolder += Time.deltaTime;
-                progress = Mathf.Lerp(0, 1, Mathf.InverseLerp(0, timeToCut, timerHolder));
-            }
-            else if(timerHolder >= timeToCut)
-            {
-                FoodInstance foodRef = heldItem.GetComponent<FoodInstance>();
-                foodRef.ingredientsPresent[0] = foodRef.ingredientsPresent[0].cuttingOutput;
-                foodRef.UpdateDisplayMesh();
-                timerHolder = 0;
-            }
-        }
-        else
-        {
-            isEngaging = false;
-            // timerHolder = 0;
-        }
         if (gm.playerRef.whatImLookingAt != this.gameObject) OnHoverEnd(); //Turns off highlighting after the player looks away, stupid hack.
-        if (heldItem == null)
+        if (!isCooking && heldItem != null) //If there's something in me, and I'm not cooking it, start cooking it.
         {
-            progress = 0;
+            StartCoroutine(CookingRoutine());
         }
-
-
+        else if (isCooking && heldItem == null)
+        {
+            StopAllCoroutines();
+            steamEffect.SetActive(false);
+            isCooking = false;
+            cookingProgress = 0;
+        }
     }
-
+    private IEnumerator CookingRoutine()
+    {
+        FoodInstance foodRef = heldItem.GetComponent<FoodInstance>();
+        steamEffect.SetActive(true);
+        isCooking = true;
+        float elapsedTime = 0;
+        while (elapsedTime < cookTime)
+        {
+            cookingProgress = Mathf.Lerp(0, 1, Mathf.InverseLerp(0, cookTime, elapsedTime));
+            yield return new WaitForEndOfFrame();
+            elapsedTime += Time.deltaTime;
+        }
+        foodRef.ingredientsPresent[0] = foodRef.ingredientsPresent[0].riceCookerOutput;
+        foodRef.UpdateDisplayMesh();
+        steamEffect.SetActive(false);
+        isCooking = false;
+    }
     public void OnInteract()
     {
         if (gm.playerRef.carriedObject == null && heldItem != null)  //If the player isn't carrying anything, and I have something;
         {
-            isEngaging = true;
             gm.playerRef.UpdatePlayerCarriedObject(heldItem);
             heldItem = null;
             Destroy(spawnedGameObject);
+
         }
         else if (heldItem == null && gm.playerRef.carriedObject != null && gm.playerRef.carriedObject.GetComponent<FoodInstance>().ingredientsPresent.Count == 1) //If I have nothing, but player interacting with me has something;
         {
             heldItem = gm.playerRef.carriedObject;
-            heldItem.transform.parent = itemPositionAnchor;
-            heldItem.transform.position = itemPositionAnchor.position;
             gm.playerRef.UpdatePlayerCarriedObject(null);
-            timerHolder = 0;
         }
     }
 
@@ -89,15 +83,11 @@ public class CuttingBoardCabinet : MonoBehaviour, IInteractable
         {
             newMatList[i] = previewMaterial;
         }
-        isHovering = true;
         m_MR.materials = newMatList;
     }
 
     public void OnHoverEnd()
     {
-        isHovering = false;
         m_MR.materials = initialMaterialList;
-
     }
-
 }

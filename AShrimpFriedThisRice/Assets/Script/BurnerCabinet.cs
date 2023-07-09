@@ -43,10 +43,7 @@ public class BurnerCabinet : MonoBehaviour, IInteractable
             isCooking = false;
             cookingProgress = 0;
         }
-
-
     }
-
 
     private IEnumerator CookingRoutine()
     {
