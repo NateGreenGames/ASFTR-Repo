@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Fried Rice
   m_EditorClassIdentifier: 
   itemName: Fried Rice
-  itemMesh: {fileID: 0}
+  itemMesh: {fileID: 6591242674988436852, guid: c861a3753e5ac9f46b8371d342a4f5cd,
+    type: 3}
   ItemIcon: {fileID: -1218807069, guid: edc218fdb2849ca4bb4da4a7617405e5, type: 3}
   riceCookerOutput: {fileID: 11400000, guid: 87700e435cc082046b390d7435a72c16, type: 2}
   cuttingOutput: {fileID: 11400000, guid: f65c804f247ab2b4dadaa772ab694ae5, type: 2}

@@ -57,7 +57,7 @@ public class BurnerCabinet : MonoBehaviour, IInteractable
             yield return new WaitForEndOfFrame();
             elapsedTime += Time.deltaTime;
         }
-        foodRef.ingredientsPresent[0] = foodRef.ingredientsPresent[0].riceCookerOutput;
+        foodRef.ingredientsPresent[0] = foodRef.ingredientsPresent[0].friedOutput;
         foodRef.UpdateDisplayMesh();
         fireEffect.SetActive(false);
         isCooking = false;

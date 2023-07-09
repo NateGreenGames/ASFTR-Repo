@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Cooked Rice
   m_EditorClassIdentifier: 
   itemName: Cooked Rice
-  itemMesh: {fileID: -8892087022036341907, guid: 26e1365c7faefbe498a83fb6ea6b67ef,
+  itemMesh: {fileID: 1599470882309329749, guid: 0f7128c6954d5ee4bb73f560c51334a8,
     type: 3}
   ItemIcon: {fileID: -1218807069, guid: edc218fdb2849ca4bb4da4a7617405e5, type: 3}
   riceCookerOutput: {fileID: 11400000, guid: 87700e435cc082046b390d7435a72c16, type: 2}

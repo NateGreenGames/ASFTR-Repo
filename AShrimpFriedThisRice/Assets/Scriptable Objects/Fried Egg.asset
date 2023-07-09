@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Fried Egg
   m_EditorClassIdentifier: 
   itemName: Fried Egg
-  itemMesh: {fileID: 0}
+  itemMesh: {fileID: -3266541936551100890, guid: d7f2c0f232e531645a3331aa1926bef4,
+    type: 3}
   ItemIcon: {fileID: 1495389333, guid: 63406aae0c5a03443a4aa9322d27085b, type: 3}
   riceCookerOutput: {fileID: 11400000, guid: 87700e435cc082046b390d7435a72c16, type: 2}
   cuttingOutput: {fileID: 11400000, guid: f65c804f247ab2b4dadaa772ab694ae5, type: 2}
