@@ -12,7 +12,6 @@ public class Order_InitTest : MonoBehaviour
     {
         //gm = GameManager.gm;
         Widget_Order widget_order = Instantiate(Resources.Load("Widgets/" + "Widget_Order") as GameObject, this.transform).GetComponent<Widget_Order>();
-        Debug.Log(soDish.dishImg);
         widget_order.WidgetOrderInit(soDish, /*gm,*/ soDish.dishImg);
         //widget_Order = gameObject.AddComponent<Widget_Order>();
         //widget_Order.WidgetOrderInit(soDish, gm);

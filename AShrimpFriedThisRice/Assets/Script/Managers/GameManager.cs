@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     public PlayerBehavior playerRef;
     public soDish[] recipeList;
     public CanvasManager canvasManager;
+    public OrderManager orderManager;
     public eScene curScene;
 
     public bool isPaused;
@@ -17,6 +18,7 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         canvasManager = GetComponent<CanvasManager>();
+        orderManager = GetComponent<OrderManager>();
         Init();
     }
 

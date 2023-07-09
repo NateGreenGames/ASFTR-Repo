@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1377801592}
   - component: {fileID: 1377801595}
   - component: {fileID: 695454922}
+  - component: {fileID: -4438808509534091931}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -54,20 +55,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 0f036547c9a9d834d829a8fde1094737, type: 2}
   - {fileID: 11400000, guid: 82da1170579c66145a95777e39d580aa, type: 2}
   - {fileID: 11400000, guid: 94ac1745783102641b07882e882d792e, type: 2}
-  - {fileID: 11400000, guid: 89f39c6d9a376974db1c8fff2fe2c5d3, type: 2}
-  - {fileID: 11400000, guid: 9aa1a5ad752c9db4daa62de9231c4b20, type: 2}
-  - {fileID: 11400000, guid: 24dac85d5837d6e4e93308cacd0255d9, type: 2}
-  - {fileID: 11400000, guid: bfd59736c76b88648a16108f867704b2, type: 2}
-  - {fileID: 11400000, guid: c6b11505c06803743ae4a8bce87a3b0e, type: 2}
-  - {fileID: 11400000, guid: 36bf6a6a1c8930e4cbd5ee2573af53b3, type: 2}
-  - {fileID: 11400000, guid: 036101f9969f96441b21d4bf1f5bfc80, type: 2}
-  - {fileID: 11400000, guid: 8a1be276de896b448af410ed3846db68, type: 2}
-  - {fileID: 11400000, guid: a953aa862a8ace045b3400a3276eb61b, type: 2}
-  - {fileID: 11400000, guid: f17522dceaed21047b006e335c6d94d5, type: 2}
-  - {fileID: 11400000, guid: 53be28bd1b753ce4d93020b7ee98e583, type: 2}
-  - {fileID: 11400000, guid: daf15731c4dc63f4493830858d6b4827, type: 2}
-  - {fileID: 11400000, guid: 6b3555092bb1ccd4c8bae13244eeffcb, type: 2}
-  - {fileID: 11400000, guid: 56a7ce4dd3796a9499872c0840af5c2d, type: 2}
   - {fileID: 11400000, guid: 2d18f87e1fb1e0b45a62e4db1f337913, type: 2}
   - {fileID: 11400000, guid: 0b51b26dfd9830e4c96d5548ef08fca0, type: 2}
   - {fileID: 11400000, guid: ea9107f07c5bff246aac8432d90039a7, type: 2}
@@ -78,6 +65,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 402733f197882bc4aac1cc1042192e6e, type: 2}
   - {fileID: 11400000, guid: 19e195b9797f04e4289086c87cefdf32, type: 2}
   canvasManager: {fileID: 0}
+  orderManager: {fileID: 0}
   curScene: 0
   isPaused: 0
 --- !u!114 &1377801592
@@ -210,3 +198,16 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &-4438808509534091931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8017339910124091029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 761b96ccd0bc2cd4c86d42781a252e71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gm: {fileID: 0}
