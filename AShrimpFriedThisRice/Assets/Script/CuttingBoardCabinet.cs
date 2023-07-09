@@ -48,7 +48,6 @@ public class CuttingBoardCabinet : MonoBehaviour, IInteractable
                 foodRef.ingredientsPresent[0] = foodRef.ingredientsPresent[0].cuttingOutput;
                 foodRef.UpdateDisplayMesh();
                 timerHolder = 0;
-                isChopped = true;
             }
         }
         else
@@ -80,7 +79,7 @@ public class CuttingBoardCabinet : MonoBehaviour, IInteractable
             heldItem.transform.parent = itemPositionAnchor;
             heldItem.transform.position = itemPositionAnchor.position;
             gm.playerRef.UpdatePlayerCarriedObject(null);
-            isChopped = false;
+            timerHolder = 0;
         }
     }
 
