@@ -51,7 +51,7 @@ public class PlayerBehavior : MonoBehaviour
     private void GatherInput()
     {
         moveDirection = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
-        interactedThisFrame = Input.GetKeyDown(KeyCode.Space);
+        interactedThisFrame = Input.GetKeyDown(KeyCode.E);
     }
     private void FaceTowardsMovement()
     {
