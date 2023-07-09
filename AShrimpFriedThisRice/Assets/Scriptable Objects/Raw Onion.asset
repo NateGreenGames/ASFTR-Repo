@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: Raw Onion
   m_EditorClassIdentifier: 
   itemName: Raw Onion
-  ItemObject: {fileID: 0}
-  ItemIcon: {fileID: 0}
+  itemMesh: {fileID: -4781271016698617791, guid: b9448447cda3f6a4aa536c6ca89fc6cb,
+    type: 3}
+  ItemIcon: {fileID: -1518088136, guid: bf0cf00ae38d6094bb0b50ecbb1364f9, type: 3}
   riceCookerOutput: {fileID: 11400000, guid: 87700e435cc082046b390d7435a72c16, type: 2}
   cuttingOutput: {fileID: 11400000, guid: ed318dfbe32d6aa47aa34e98d1d46af2, type: 2}
   friedOutput: {fileID: 11400000, guid: 87700e435cc082046b390d7435a72c16, type: 2}

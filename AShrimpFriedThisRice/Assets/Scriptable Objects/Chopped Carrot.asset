@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Chopped Carrot
   m_EditorClassIdentifier: 
   itemName: Raw Carrot
-  ItemObject: {fileID: 0}
+  itemMesh: {fileID: 5176338530405681755, guid: c1bd266336fc75842b8e6e1e36c2d8f7,
+    type: 3}
   ItemIcon: {fileID: 0}
   riceCookerOutput: {fileID: 11400000, guid: 87700e435cc082046b390d7435a72c16, type: 2}
   cuttingOutput: {fileID: 11400000, guid: f65c804f247ab2b4dadaa772ab694ae5, type: 2}

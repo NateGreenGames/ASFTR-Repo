@@ -9,6 +9,8 @@ public class CuttingBoardCabinet : MonoBehaviour, IInteractable
     [SerializeField] Material previewMaterial;
     [SerializeField] Transform itemPositionAnchor;
 
+    private bool isEngaging = false;
+
 
     public bool isInteractable { get; set; }
 
@@ -16,6 +18,10 @@ public class CuttingBoardCabinet : MonoBehaviour, IInteractable
     private MeshRenderer m_MR;
     private GameManager gm;
     private GameObject spawnedGameObject;
+
+
+    private float timeToCut = 3;
+    private float timerHolder;
 
     private void Start()
     {
@@ -27,12 +33,29 @@ public class CuttingBoardCabinet : MonoBehaviour, IInteractable
 
     private void Update()
     {
-        if (gm.playerRef.whatImLookingAt != this.gameObject) OnHoverEnd(); //Turns off highlighting after the player looks away, stupid hack.
-        if (heldItem != null && progress != 0) //If there's something in me, and I'm not cooking it, start cooking it.
+        if (!Input.GetKeyUp(KeyCode.Space) && heldItem != null)
         {
-
+            isEngaging = true;
+            if(timerHolder < timeToCut)
+            {
+                timerHolder += Time.deltaTime;
+                progress = Mathf.Lerp(0, 1, Mathf.InverseLerp(0, timeToCut, timerHolder));
+            }
+            else if(timerHolder >= timeToCut)
+            {
+                FoodInstance foodRef = heldItem.GetComponent<FoodInstance>();
+                foodRef.ingredientsPresent[0] = foodRef.ingredientsPresent[0].cuttingOutput;
+                foodRef.UpdateDisplayMesh();
+                timerHolder = 0;
+            }
         }
-        else if (heldItem == null)
+        else
+        {
+            isEngaging = false;
+            timerHolder = 0;
+        }
+        if (gm.playerRef.whatImLookingAt != this.gameObject) OnHoverEnd(); //Turns off highlighting after the player looks away, stupid hack.
+        if (heldItem == null)
         {
             progress = 0;
         }
@@ -44,6 +67,7 @@ public class CuttingBoardCabinet : MonoBehaviour, IInteractable
     {
         if (gm.playerRef.carriedObject == null && heldItem != null)  //If the player isn't carrying anything, and I have something;
         {
+            isEngaging = true;
             gm.playerRef.UpdatePlayerCarriedObject(heldItem);
             heldItem = null;
             Destroy(spawnedGameObject);
