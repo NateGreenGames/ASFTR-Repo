@@ -19,3 +19,4 @@ MonoBehaviour:
   riceCookerOutput: {fileID: 11400000, guid: 87700e435cc082046b390d7435a72c16, type: 2}
   cuttingOutput: {fileID: 11400000, guid: f65c804f247ab2b4dadaa772ab694ae5, type: 2}
   friedOutput: {fileID: 11400000, guid: 87700e435cc082046b390d7435a72c16, type: 2}
+  isChopped: 1

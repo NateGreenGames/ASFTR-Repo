@@ -10,7 +10,8 @@ public class CuttingBoardCabinet : MonoBehaviour, IInteractable
     [SerializeField] Transform itemPositionAnchor;
 
     private bool isEngaging = false;
-
+    private bool isHovering;
+    private bool isChopped;
 
     public bool isInteractable { get; set; }
 
@@ -33,7 +34,7 @@ public class CuttingBoardCabinet : MonoBehaviour, IInteractable
 
     private void Update()
     {
-        if (!Input.GetKeyUp(KeyCode.Space) && heldItem != null)
+        if (Input.GetKey(KeyCode.Space) && heldItem != null && isHovering && heldItem.GetComponent<FoodInstance>().ingredientsPresent[0].isChopped == false) // Checks to see if the item is chopped. If true, press space does nothing.
         {
             isEngaging = true;
             if(timerHolder < timeToCut)
@@ -47,12 +48,13 @@ public class CuttingBoardCabinet : MonoBehaviour, IInteractable
                 foodRef.ingredientsPresent[0] = foodRef.ingredientsPresent[0].cuttingOutput;
                 foodRef.UpdateDisplayMesh();
                 timerHolder = 0;
+                isChopped = true;
             }
         }
         else
         {
             isEngaging = false;
-            timerHolder = 0;
+            // timerHolder = 0;
         }
         if (gm.playerRef.whatImLookingAt != this.gameObject) OnHoverEnd(); //Turns off highlighting after the player looks away, stupid hack.
         if (heldItem == null)
@@ -78,6 +80,7 @@ public class CuttingBoardCabinet : MonoBehaviour, IInteractable
             heldItem.transform.parent = itemPositionAnchor;
             heldItem.transform.position = itemPositionAnchor.position;
             gm.playerRef.UpdatePlayerCarriedObject(null);
+            isChopped = false;
         }
     }
 
@@ -88,13 +91,15 @@ public class CuttingBoardCabinet : MonoBehaviour, IInteractable
         {
             newMatList[i] = previewMaterial;
         }
-
+        isHovering = true;
         m_MR.materials = newMatList;
     }
 
     public void OnHoverEnd()
     {
+        isHovering = false;
         m_MR.materials = initialMaterialList;
+
     }
 
 }

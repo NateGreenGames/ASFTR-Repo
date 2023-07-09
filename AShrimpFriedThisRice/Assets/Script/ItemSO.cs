@@ -10,6 +10,7 @@ public class ItemSO : ScriptableObject
     public Mesh itemMesh;
     public Sprite ItemIcon;
 
-
     public ItemSO riceCookerOutput, cuttingOutput, friedOutput;
+
+    public bool isChopped;
 }
