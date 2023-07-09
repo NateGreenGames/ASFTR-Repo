@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: EggFriedRice
   m_EditorClassIdentifier: 
   dishName: Egg Fried Rice
-  dishImg: {fileID: 0}
-  dishMesh: {fileID: 0}
+  dishImg: {fileID: -773617859, guid: a1bfc2d3049a8274c8e11b8b662ae3e1, type: 3}
+  dishMesh: {fileID: -4101859654039529856, guid: d5d9cfed30ced1f45ad2ee485d33f207,
+    type: 3}
   soItem:
   - {fileID: 11400000, guid: 549627114b08bab4f8c41486f6e22908, type: 2}
   - {fileID: 11400000, guid: 442e5f4e6bb29d64892082432519492f, type: 2}

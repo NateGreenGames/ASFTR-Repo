@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: Human&Egg&Onion&CarrotFriedRice
   m_EditorClassIdentifier: 
   dishName: Human, Egg, & Carrot Fried Rice w/Onion
-  dishImg: {fileID: 0}
-  dishMesh: {fileID: 0}
+  dishImg: {fileID: 1042742997, guid: a1bfc2d3049a8274c8e11b8b662ae3e1, type: 3}
+  dishMesh: {fileID: 6162202959001762325, guid: a8fd831e364aa694eaf40c0635458be6,
+    type: 3}
   soItem:
   - {fileID: 11400000, guid: 549627114b08bab4f8c41486f6e22908, type: 2}
   - {fileID: 11400000, guid: 442e5f4e6bb29d64892082432519492f, type: 2}

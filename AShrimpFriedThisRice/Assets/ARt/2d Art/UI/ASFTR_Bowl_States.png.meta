@@ -105,7 +105,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ASFTR_Bowl_States_0
+      name: ASFTR_Bowl_States_FriedRice
       rect:
         serializedVersion: 2
         x: 0
@@ -113,7 +113,7 @@ TextureImporter:
         width: 307.2
         height: 307.2
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -126,7 +126,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ASFTR_Bowl_States_1
+      name: ASFTR_Bowl_States_CarrotFriedRice
       rect:
         serializedVersion: 2
         x: 307
@@ -134,7 +134,7 @@ TextureImporter:
         width: 307.2
         height: 307.2
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -147,15 +147,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ASFTR_Bowl_States_2
+      name: ASFTR_Bowl_States_FriedRiceWOnion
       rect:
         serializedVersion: 2
         x: 614
-        y: 1228.8
-        width: 307.2
-        height: 307.2
+        y: 1229
+        width: 307
+        height: 307
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -168,7 +168,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ASFTR_Bowl_States_3
+      name: ASFTR_Bowl_States_CarrotFriedRiceWOnio
       rect:
         serializedVersion: 2
         x: 921
@@ -176,7 +176,7 @@ TextureImporter:
         width: 307.2
         height: 307.2
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -189,7 +189,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ASFTR_Bowl_States_4
+      name: ASFTR_Bowl_States_HumanFriedRice
       rect:
         serializedVersion: 2
         x: 0
@@ -197,7 +197,7 @@ TextureImporter:
         width: 307.2
         height: 307.2
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -210,15 +210,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ASFTR_Bowl_States_5
+      name: ASFTR_Bowl_States_Human&CarrotFriedRice
       rect:
         serializedVersion: 2
         x: 307
-        y: 921.8
-        width: 307.2
-        height: 307.2
+        y: 923
+        width: 307
+        height: 307
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -231,7 +231,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ASFTR_Bowl_States_6
+      name: ASFTR_Bowl_States_HumanFriedRiceWOnion
       rect:
         serializedVersion: 2
         x: 614
@@ -239,7 +239,7 @@ TextureImporter:
         width: 307.2
         height: 307.2
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -252,7 +252,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ASFTR_Bowl_States_7
+      name: ASFTR_Bowl_States_Human&CarrotFriedRiceWOnion
       rect:
         serializedVersion: 2
         x: 921
@@ -260,7 +260,7 @@ TextureImporter:
         width: 307.2
         height: 307.2
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -273,15 +273,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ASFTR_Bowl_States_8
+      name: ASFTR_Bowl_States_EggFriedRice
       rect:
         serializedVersion: 2
         x: 0
-        y: 614.8
-        width: 307.2
-        height: 307.2
+        y: 615
+        width: 307
+        height: 307
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -294,7 +294,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ASFTR_Bowl_States_9
+      name: ASFTR_Bowl_States_Carrot&EggFriedRice
       rect:
         serializedVersion: 2
         x: 307
@@ -302,7 +302,7 @@ TextureImporter:
         width: 307.2
         height: 307.2
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -315,7 +315,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ASFTR_Bowl_States_10
+      name: ASFTR_Bowl_States_EggFriedRiceWOnion
       rect:
         serializedVersion: 2
         x: 614
@@ -323,7 +323,7 @@ TextureImporter:
         width: 307.2
         height: 307.2
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -336,7 +336,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ASFTR_Bowl_States_11
+      name: ASFTR_Bowl_States_Carrot&EggWOnion
       rect:
         serializedVersion: 2
         x: 921
@@ -344,7 +344,7 @@ TextureImporter:
         width: 307.2
         height: 307.2
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -357,7 +357,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ASFTR_Bowl_States_12
+      name: ASFTR_Bowl_States_Human&EggFriedRice
       rect:
         serializedVersion: 2
         x: 0
@@ -365,7 +365,7 @@ TextureImporter:
         width: 307.2
         height: 307.2
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -378,7 +378,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ASFTR_Bowl_States_13
+      name: ASFTR_Bowl_States_Human&Carrot&EggFriedRice
       rect:
         serializedVersion: 2
         x: 307
@@ -386,7 +386,7 @@ TextureImporter:
         width: 307.2
         height: 307.2
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -399,7 +399,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ASFTR_Bowl_States_14
+      name: ASFTR_Bowl_States_Human&EggFriedRic
       rect:
         serializedVersion: 2
         x: 614
@@ -407,7 +407,7 @@ TextureImporter:
         width: 307.2
         height: 307.2
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -420,15 +420,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ASFTR_Bowl_States_15
+      name: ASFTR_Bowl_States_Human&Egg&CarrotFriedRiceWOnion
       rect:
         serializedVersion: 2
-        x: 921
-        y: 307.8
-        width: 307.2
-        height: 307.2
+        x: 919
+        y: 308
+        width: 307
+        height: 307
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -451,22 +451,22 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      ASFTR_Bowl_States_5: -175814972
-      ASFTR_Bowl_States_3: -1628316740
-      ASFTR_Bowl_States_0: -852109611
-      ASFTR_Bowl_States_6: -773617859
-      ASFTR_Bowl_States_12: -465209246
-      ASFTR_Bowl_States_10: -472053633
-      ASFTR_Bowl_States_11: -114685614
-      ASFTR_Bowl_States_8: -403249393
-      ASFTR_Bowl_States_1: 1062827764
-      ASFTR_Bowl_States_7: -1170239672
-      ASFTR_Bowl_States_2: -1724520319
-      ASFTR_Bowl_States_15: 780755861
-      ASFTR_Bowl_States_14: -2135830837
-      ASFTR_Bowl_States_13: 1042742997
-      ASFTR_Bowl_States_4: -376762976
-      ASFTR_Bowl_States_9: -896913976
+      ASFTR_Bowl_States_EggFriedRice: -773617859
+      ASFTR_Bowl_States_FriedRiceWOnion: -852109611
+      ASFTR_Bowl_States_CarrotFriedRiceWOnio: 1062827764
+      ASFTR_Bowl_States_Human&Egg&CarrotFriedRiceWOnion: 1042742997
+      ASFTR_Bowl_States_Carrot&EggWOnion: -896913976
+      ASFTR_Bowl_States_Human&Carrot&EggFriedRice: -114685614
+      ASFTR_Bowl_States_HumanFriedRiceWOnion: -376762976
+      ASFTR_Bowl_States_Carrot&EggFriedRice: -1170239672
+      ASFTR_Bowl_States_Human&CarrotFriedRiceWOnion: -175814972
+      ASFTR_Bowl_States_HumanFriedRice: -1724520319
+      ASFTR_Bowl_States_CarrotFriedRice: 780755861
+      ASFTR_Bowl_States_Human&EggFriedRice: -472053633
+      ASFTR_Bowl_States_Human&CarrotFriedRice: -1628316740
+      ASFTR_Bowl_States_EggFriedRiceWOnion: -403249393
+      ASFTR_Bowl_States_FriedRice: -2135830837
+      ASFTR_Bowl_States_Human&EggFriedRic: -465209246
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
