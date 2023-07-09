@@ -72,6 +72,8 @@ public class RiceCookerCabinet : MonoBehaviour, IInteractable
         else if (heldItem == null && gm.playerRef.carriedObject != null && gm.playerRef.carriedObject.GetComponent<FoodInstance>().ingredientsPresent.Count == 1) //If I have nothing, but player interacting with me has something;
         {
             heldItem = gm.playerRef.carriedObject;
+            heldItem.transform.parent = itemPositionAnchor;
+            heldItem.transform.position = itemPositionAnchor.position;
             gm.playerRef.UpdatePlayerCarriedObject(null);
         }
     }
