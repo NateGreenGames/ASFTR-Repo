@@ -67,6 +67,8 @@ public class GameManager : MonoBehaviour
                 break;
             case eScene.nateTestScene:
                 playerRef = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerBehavior>();
+                gm.canvasManager.ShowCanvasInGame();
+                gm.orderManager.Init();
                 break;
         }
     }
