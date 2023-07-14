@@ -6,6 +6,7 @@ public class CanvasInGame : MonoBehaviour
 {
     public TimerManager timerManager;
     public int levelTime;
+    public Transform orders_grp;
 
     private void Start()
     {

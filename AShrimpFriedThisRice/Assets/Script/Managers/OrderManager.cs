@@ -5,7 +5,6 @@ using UnityEngine;
 public class OrderManager : MonoBehaviour
 {
     public GameManager gm;
-    public Transform widgets_grp;
     //public soDish[] soDishes;
     public List<soDish> orders = new List<soDish>();
     public int currentOrders;
@@ -13,8 +12,9 @@ public class OrderManager : MonoBehaviour
     public bool startGettingOrders;
     //public soDish soDish;
 
-    private void Start()
+    public void Init()
     {
+        //Debug.Log(GameManager.gm.canvasManager.canvasInGame.orders_grp.transform);
         if (startGettingOrders == false)
         {
             return;
@@ -28,7 +28,7 @@ public class OrderManager : MonoBehaviour
         soDish _soDish = gm.recipeList[Random.Range(0, gm.recipeList.Length)];
         orders.Add(_soDish);
 
-        Widget_Order widget_order = Instantiate(Resources.Load("Widgets/" + "Widget_Order") as GameObject, widgets_grp.transform).GetComponent<Widget_Order>();
+        Widget_Order widget_order = Instantiate(Resources.Load("Widgets/" + "Widget_Order") as GameObject, gm.canvasManager.canvasInGame.orders_grp.transform).GetComponent<Widget_Order>();
         widget_order.WidgetOrderInit(_soDish, _soDish.dishImg);
         currentOrders += 1;
     }

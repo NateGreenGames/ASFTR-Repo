@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 public class CanvasManager : MonoBehaviour
 {
     private CanvasFE canvasFE;
+    public CanvasInGame canvasInGame;
 
     // Function used to change scenes
     public void LoadLevel(eScene _scene)
@@ -15,6 +16,11 @@ public class CanvasManager : MonoBehaviour
     public void ShowCanvasFE()
     {
         Instantiate(Resources.Load("Canvas/CanvasFE/" + "CanvasFE") as GameObject).GetComponent<CanvasFE>();
+    }
+
+    public void ShowCanvasInGame()
+    {
+        canvasInGame = Instantiate(Resources.Load("Canvas/" + "Canvas_InGame") as GameObject).GetComponent<CanvasInGame>();
     }
 
     public void ShowSettings()
