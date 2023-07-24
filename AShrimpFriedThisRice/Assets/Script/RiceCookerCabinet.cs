@@ -45,7 +45,7 @@ public class RiceCookerCabinet : MonoBehaviour, IInteractable
     }
     private IEnumerator CookingRoutine()
     {
-        FoodInstance foodRef = heldItem.GetComponent<FoodInstance>();
+        FoodInstance foodRef = heldItem.GetComponent<FoodInstance>(); 
         steamEffect.SetActive(true);
         isCooking = true;
         float elapsedTime = 0;

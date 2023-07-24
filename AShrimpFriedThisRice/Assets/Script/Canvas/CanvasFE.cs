@@ -10,11 +10,13 @@ public class CanvasFE : MonoBehaviour
         gm = GameManager.gm;
     }
 
+    // Quits the game
     public void OnQuitPressed()
     {
-        
+        // TODO: Button needs to close game
     }
-
+    
+    // Takes player to settings menu
     public void OnSettingsPressed()
     {
         gm.canvasManager.ShowSettings();

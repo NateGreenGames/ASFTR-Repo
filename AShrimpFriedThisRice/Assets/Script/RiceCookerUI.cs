@@ -34,6 +34,7 @@ public class RiceCookerUI : MonoBehaviour
 
     private void Update()
     {
+        // Checks what type of table the player is looking at and updates the progress bar respectively 
         if (type == ETableType.Stove)
         {
             if (cabinetRef.cookingProgress == 0)
@@ -47,7 +48,7 @@ public class RiceCookerUI : MonoBehaviour
             }
             slider.transform.LookAt(slider.transform.position + new Vector3(0, -1, 1));
         }
-        else if (type == ETableType.CuttingBoard )
+        else if (type == ETableType.CuttingBoard)
         {
             if (cuttingCabinet.progress == 0)
             {

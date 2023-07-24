@@ -33,7 +33,8 @@ public class CuttingBoardCabinet : MonoBehaviour, IInteractable
 
     private void Update()
     {
-        if (Input.GetKey(KeyCode.Space) && heldItem != null && isHovering && heldItem.GetComponent<FoodInstance>().ingredientsPresent[0].isChopped == false) // Checks to see if the item is chopped. If true, press space does nothing.
+        // Checks to see if the item is chopped. If true, press space does nothing.
+        if (Input.GetKey(KeyCode.Space) && heldItem != null && isHovering && heldItem.GetComponent<FoodInstance>().ingredientsPresent[0].isChopped == false) 
         {
             isEngaging = true;
             if(timerHolder < timeToCut)
@@ -59,8 +60,6 @@ public class CuttingBoardCabinet : MonoBehaviour, IInteractable
         {
             progress = 0;
         }
-
-
     }
 
     public void OnInteract()
